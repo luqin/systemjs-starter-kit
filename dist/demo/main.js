@@ -1,18 +1,17 @@
 'use strict';
 
-var _car = require('./car');
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
-var _truck = require('./truck');
+var _react = require('react');
 
-var car = new _car.Car({
-	price: 30000, make: 'Chevy', model: 'Malibu',
-	year: 2014, isElectric: false, isHatchback: false
-});
+var _react2 = _interopRequireDefault(_react);
 
-var truck = new _truck.Truck({
-	price: 40000, make: 'Ford', model: 'F150',
-	year: 2014, is4by4: true
-});
+var _reactDom = require('react-dom');
 
-var output = document.getElementById('output');
-output.innerHTML += '\n\t<br/>' + car.getDetails() + '\n    <br/>Car total: ' + car.getTotal(.08) + '\n\t<br/><br />\n\t' + truck.getDetails() + '\n\t<br/>Truck total: ' + truck.getTotal(.08) + '\n\t';
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _componentsApp = require('./components/App');
+
+var _componentsApp2 = _interopRequireDefault(_componentsApp);
+
+_reactDom2['default'].render(_react2['default'].createElement(_componentsApp2['default'], null), document.querySelector('#output'));
