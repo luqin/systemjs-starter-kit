@@ -1,0 +1,8 @@
+.gitignore
+*.iml
+.idea
+.svn
+
+src/
+node_modules/
+test/

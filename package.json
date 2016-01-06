@@ -1,0 +1,24 @@
+{
+  "name": "systemjs-es6-react-demo",
+  "version": "1.0.0",
+  "description": "ES6 SystemJS and Modules",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.25",
+    "systemjs": "^0.19.11"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-plugin-object-assign": "^1.2.1",
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.8.8",
+    "gulp-babel": "^5.1.0",
+    "react": "^0.14.0",
+    "react-bootstrap": "^0.27.2",
+    "react-dom": "^0.14.0",
+    "superstatic": "^4.0.1"
+  }
+}
