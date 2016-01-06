@@ -2,6 +2,7 @@
 *.iml
 .idea
 .svn
+.git
 
 src/
 node_modules/
