@@ -3,5 +3,13 @@ System.config({
   paths: {
     "*": "*.js"
   },
-  defaultJSExtensions: true
+  defaultJSExtensions: true,
+  packages: {
+    'echarts': {
+      main: 'echarts.js'
+    },
+    'zrenderjs': {
+      main: 'zrender.js'
+    }
+  }
 });

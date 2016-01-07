@@ -10,8 +10,8 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _componentsApp = require('./components/App');
+var _routes = require('./routes');
 
-var _componentsApp2 = _interopRequireDefault(_componentsApp);
+var _routes2 = _interopRequireDefault(_routes);
 
-_reactDom2['default'].render(_react2['default'].createElement(_componentsApp2['default'], null), document.querySelector('#output'));
+_reactDom2['default'].render(_routes2['default'], document.getElementById('app'));
