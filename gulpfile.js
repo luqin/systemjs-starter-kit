@@ -1,6 +1,7 @@
-var babel = require('gulp-babel');
-var browserSync = require('browser-sync');
 var gulp = require('gulp');
+var babel = require('gulp-babel');
+var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync');
 var superstatic = require('superstatic');
 
 var es6Path = 'src/**/*.js';
@@ -9,6 +10,7 @@ var compilePath = 'dist';
 
 gulp.task('static', function () {
     return gulp.src(staticPath)
+        .pipe(plumber())
         .pipe(gulp.dest(compilePath));
 });
 
@@ -18,6 +20,7 @@ gulp.task('static:watch', function () {
 
 gulp.task('babel', function () {
     return gulp.src([es6Path])
+        .pipe(plumber())
         .pipe(babel())
         .pipe(gulp.dest(compilePath));
 });
@@ -34,7 +37,7 @@ gulp.task('serve', ['watch'], function () {
     process.stdout.write('Starting browserSync and superstatic...\n');
     browserSync({
         port: 3000,
-        files: ['index.html', '**/*.js'],
+        files: ['index.html', 'dist/**/*.js'],
         injectChanges: true,
         logFileChanges: false,
         logLevel: 'silent',
@@ -43,7 +46,7 @@ gulp.task('serve', ['watch'], function () {
         reloadDelay: 0,
         server: {
             baseDir: '.',
-            middleware: superstatic({ debug: false })
+            middleware: superstatic({ debug: true })
         }
     });
 });
