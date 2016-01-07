@@ -27,10 +27,10 @@ var _componentsWordCloudChart2 = _interopRequireDefault(_componentsWordCloudChar
 var router = _react2['default'].createElement(
   _reactRouter.Router,
   { history: _reactRouter.hashHistory },
-  _react2['default'].createElement(_reactRouter.Redirect, { from: '/', to: '/echarts/word-cloud' }),
   _react2['default'].createElement(
     _reactRouter.Route,
     { path: '/', component: _componentsApp2['default'] },
+    _react2['default'].createElement(_reactRouter.IndexRoute, { component: _componentsWordCloudChart2['default'] }),
     _react2['default'].createElement(
       _reactRouter.Route,
       { path: 'echarts' },
