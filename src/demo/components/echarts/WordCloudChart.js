@@ -143,13 +143,30 @@ let charCloudOption = {
 
 var WordCloudChart = React.createClass({
   componentDidMount() {
-    let mychart = echarts.init(document.getElementById('chart'));
+    let mychart = echarts.init(this.refs.chart);
     mychart.setOption(charCloudOption);
+
+    setTimeout(() => {
+      System.import('./a')
+        .then(a => {
+          console.error('相对路径加载`./a`成功');
+        })
+        .catch(() => {
+          console.error('相对路径加载`./a`失败');
+        });
+      System.import('demo1/truck')
+        .then(a => {
+          console.error('绝对路径加载`demo1/truck`成功');
+        })
+        .catch(() => {
+          console.error('绝对路径加载`demo1/truck`失败');
+        });
+    }, 3000);
   },
 
   render() {
     return (
-      <div id="chart" style={{width: '80%', height: '600px'}}>
+      <div ref="chart" style={{width: '80%', height: '600px'}}>
       </div>
     );
   }
