@@ -3,7 +3,7 @@ import { hashHistory, Router, Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 import NoMatch from './components/NoMatch';
-import WordCloudChart from './components/WordCloudChart';
+import WordCloudChart from './components/echarts/WordCloudChart';
 
 var router = (
   <Router history={hashHistory}>
