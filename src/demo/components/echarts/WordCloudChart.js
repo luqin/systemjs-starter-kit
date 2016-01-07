@@ -147,6 +147,7 @@ var WordCloudChart = React.createClass({
     mychart.setOption(charCloudOption);
 
     setTimeout(() => {
+      require('./a');
       System.import('./a')
         .then(a => {
           console.error('相对路径加载`./a`成功');
@@ -161,7 +162,7 @@ var WordCloudChart = React.createClass({
         .catch(() => {
           console.error('绝对路径加载`demo1/truck`失败');
         });
-    }, 3000);
+    }, 2000);
   },
 
   render() {
