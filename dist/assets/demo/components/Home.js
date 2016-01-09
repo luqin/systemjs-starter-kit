@@ -24,9 +24,9 @@ var _echartsComponentsWordCloudChart = require('../echarts/components/WordCloudC
 
 var _echartsComponentsWordCloudChart2 = _interopRequireDefault(_echartsComponentsWordCloudChart);
 
-var _threejsHelloworldComponentsHelloWorld = require('../threejs/helloworld/components/HelloWorld');
+var _threejsLesson1ComponentsHelloWorld = require('../threejs/lesson1/components/HelloWorld');
 
-var _threejsHelloworldComponentsHelloWorld2 = _interopRequireDefault(_threejsHelloworldComponentsHelloWorld);
+var _threejsLesson1ComponentsHelloWorld2 = _interopRequireDefault(_threejsLesson1ComponentsHelloWorld);
 
 var Home = (function (_React$Component) {
   _inherits(Home, _React$Component);
@@ -73,7 +73,7 @@ var Home = (function (_React$Component) {
           _react2['default'].createElement(
             _reactBootstrap.Col,
             { xs: 12, md: 6 },
-            _react2['default'].createElement(_threejsHelloworldComponentsHelloWorld2['default'], null)
+            _react2['default'].createElement(_threejsLesson1ComponentsHelloWorld2['default'], null)
           )
         )
       );

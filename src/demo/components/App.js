@@ -40,6 +40,9 @@ class App extends React.Component {
                 <LinkContainer to="/three.js/hello-world">
                   <NavItem>Hello World</NavItem>
                 </LinkContainer>
+                <LinkContainer to="/three.js/lesson1">
+                  <NavItem>Lesson 1</NavItem>
+                </LinkContainer>
               </NavDropdown>
             </Nav>
             <Nav pullRight>

@@ -84,6 +84,15 @@ var App = (function (_React$Component) {
                     null,
                     'Hello World'
                   )
+                ),
+                _react2['default'].createElement(
+                  _reactRouterBootstrap.LinkContainer,
+                  { to: '/three.js/lesson1' },
+                  _react2['default'].createElement(
+                    _reactBootstrap.NavItem,
+                    null,
+                    'Lesson 1'
+                  )
                 )
               )
             ),

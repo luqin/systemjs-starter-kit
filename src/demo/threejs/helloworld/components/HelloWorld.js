@@ -1,27 +1,12 @@
-import React from 'react';
-
+import BaseComponent from '../../common/BaseComponent';
 import demo from '../demo';
 
-class Three extends React.Component {
+class HelloWorld extends BaseComponent {
 
-  constructor(props) {
-    super(props);
-    this.state = {};
+  init() {
+    demo.init(this.getContainer());
   }
 
-  componentDidMount() {
-    demo.init(this.refs.three);
-  }
-
-  componentWillUnmount() {
-
-  }
-
-  render() {
-    return (
-      <div ref="three"/>
-    );
-  }
 }
 
-export default Three;
+export default HelloWorld;

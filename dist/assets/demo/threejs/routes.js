@@ -16,10 +16,15 @@ var _helloworldComponentsHelloWorld = require('./helloworld/components/HelloWorl
 
 var _helloworldComponentsHelloWorld2 = _interopRequireDefault(_helloworldComponentsHelloWorld);
 
+var _lesson1ComponentsHelloWorld = require('./lesson1/components/HelloWorld');
+
+var _lesson1ComponentsHelloWorld2 = _interopRequireDefault(_lesson1ComponentsHelloWorld);
+
 var routes = _react2['default'].createElement(
   _reactRouter.Route,
   { path: 'three.js' },
-  _react2['default'].createElement(_reactRouter.Route, { path: 'hello-world', component: _helloworldComponentsHelloWorld2['default'] })
+  _react2['default'].createElement(_reactRouter.Route, { path: 'hello-world', component: _helloworldComponentsHelloWorld2['default'] }),
+  _react2['default'].createElement(_reactRouter.Route, { path: 'lesson1', component: _lesson1ComponentsHelloWorld2['default'] })
 );
 
 exports['default'] = routes;

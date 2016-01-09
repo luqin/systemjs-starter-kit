@@ -167,7 +167,7 @@ var WordCloudChart = React.createClass({
 
   render() {
     return (
-      <div ref="chart" style={{width: '80%', height: '600px'}}>
+      <div ref="chart" style={{width: '80%', height: (window.innerHeight - 130) + 'px'}}>
       </div>
     );
   }
