@@ -11,6 +11,9 @@ System.config({
     'react-router-bootstrap': {
       main: './lib/index.js'
     },
+    'three.js': {
+      main: './build/three.js'
+    },
     'echarts': {
       main: 'echarts.js'
     },
