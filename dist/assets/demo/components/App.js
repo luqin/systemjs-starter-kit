@@ -84,6 +84,24 @@ var App = (function (_React$Component) {
                     null,
                     'Hello World'
                   )
+                ),
+                _react2['default'].createElement(
+                  _reactRouterBootstrap.LinkContainer,
+                  { to: '/three.js/webgl-buffergeometry-drawcalls' },
+                  _react2['default'].createElement(
+                    _reactBootstrap.NavItem,
+                    null,
+                    'webgl-buffergeometry-drawcalls'
+                  )
+                ),
+                _react2['default'].createElement(
+                  _reactRouterBootstrap.LinkContainer,
+                  { to: '/three.js/lesson1' },
+                  _react2['default'].createElement(
+                    _reactBootstrap.NavItem,
+                    null,
+                    'Lesson 1'
+                  )
                 )
               )
             ),
@@ -98,19 +116,7 @@ var App = (function (_React$Component) {
             )
           )
         ),
-        _react2['default'].createElement(
-          _reactBootstrap.Grid,
-          null,
-          _react2['default'].createElement(
-            _reactBootstrap.Row,
-            null,
-            _react2['default'].createElement(
-              _reactBootstrap.Col,
-              { md: 12 },
-              this.props.children
-            )
-          )
-        )
+        this.props.children
       );
     }
   }], [{

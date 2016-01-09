@@ -14,41 +14,32 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _react = require('react');
+var _commonBaseComponent = require('../../common/BaseComponent');
 
-var _react2 = _interopRequireDefault(_react);
+var _commonBaseComponent2 = _interopRequireDefault(_commonBaseComponent);
 
 var _demo = require('../demo');
 
 var _demo2 = _interopRequireDefault(_demo);
 
-var Three = (function (_React$Component) {
-  _inherits(Three, _React$Component);
+var HelloWorld = (function (_BaseComponent) {
+  _inherits(HelloWorld, _BaseComponent);
 
-  function Three(props) {
-    _classCallCheck(this, Three);
+  function HelloWorld() {
+    _classCallCheck(this, HelloWorld);
 
-    _get(Object.getPrototypeOf(Three.prototype), 'constructor', this).call(this, props);
-    this.state = {};
+    _get(Object.getPrototypeOf(HelloWorld.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(Three, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      _demo2['default'].init(this.refs.three);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {}
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement('div', { ref: 'three' });
+  _createClass(HelloWorld, [{
+    key: 'init',
+    value: function init() {
+      _demo2['default'].init(this.getContainer());
     }
   }]);
 
-  return Three;
-})(_react2['default'].Component);
+  return HelloWorld;
+})(_commonBaseComponent2['default']);
 
-exports['default'] = Three;
+exports['default'] = HelloWorld;
 module.exports = exports['default'];

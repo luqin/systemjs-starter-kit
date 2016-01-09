@@ -40,6 +40,12 @@ class App extends React.Component {
                 <LinkContainer to="/three.js/hello-world">
                   <NavItem>Hello World</NavItem>
                 </LinkContainer>
+                <LinkContainer to="/three.js/webgl-buffergeometry-drawcalls">
+                  <NavItem>webgl-buffergeometry-drawcalls</NavItem>
+                </LinkContainer>
+                <LinkContainer to="/three.js/lesson1">
+                  <NavItem>Lesson 1</NavItem>
+                </LinkContainer>
               </NavDropdown>
             </Nav>
             <Nav pullRight>
@@ -47,13 +53,7 @@ class App extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Grid>
-          <Row>
-            <Col md={12}>
-              {this.props.children}
-            </Col>
-          </Row>
-        </Grid>
+        {this.props.children}
       </div>
     );
   }

@@ -8,7 +8,7 @@ const demo = {
 
     function resize() {
       width = $(container).innerWidth();
-      height = window.innerHeight;
+      height = window.innerHeight - 100;
     }
 
     resize();

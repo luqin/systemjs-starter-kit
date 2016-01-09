@@ -153,7 +153,7 @@ var WordCloudChart = _react2['default'].createClass({
   },
 
   render: function render() {
-    return _react2['default'].createElement('div', { ref: 'chart', style: { width: '80%', height: '600px' } });
+    return _react2['default'].createElement('div', { ref: 'chart', style: { width: '80%', height: window.innerHeight - 130 + 'px' } });
   }
 });
 

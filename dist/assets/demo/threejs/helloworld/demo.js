@@ -19,7 +19,7 @@ var demo = {
 
     function resize() {
       width = (0, _jquery2['default'])(container).innerWidth();
-      height = window.innerHeight;
+      height = window.innerHeight - 100;
     }
 
     resize();
