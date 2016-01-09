@@ -1,25 +1,43 @@
 import React from 'react';
 
+import {
+  Grid,
+  Row,
+  Col,
+} from 'react-bootstrap';
+
+import EchartsWordCloudChart from '../echarts/components/WordCloudChart';
+import ThreejsHelloWorld from '../threejs/helloworld/components/HelloWorld';
 
 class Home extends React.Component {
 
-    static propTypes = {};
+  static propTypes = {};
 
-    static defaultProps = {};
+  static defaultProps = {};
 
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    componentDidMount() {
-    }
+  componentDidMount() {
+  }
 
-    render() {
-        return (
-            <div>MyComponent</div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>ES6 JavaScript with Modules Using System.js</h1>
+        <Row>
+          <Col xs={12} md={6}>
+            <EchartsWordCloudChart/>
+          </Col>
+          <Col xs={12} md={6}>
+            <ThreejsHelloWorld/>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
 }
 
 export default Home;
