@@ -16,13 +16,13 @@ var _componentsApp = require('./components/App');
 
 var _componentsApp2 = _interopRequireDefault(_componentsApp);
 
+var _componentsHome = require('./components/Home');
+
+var _componentsHome2 = _interopRequireDefault(_componentsHome);
+
 var _componentsNoMatch = require('./components/NoMatch');
 
 var _componentsNoMatch2 = _interopRequireDefault(_componentsNoMatch);
-
-var _componentsEchartsWordCloudChart = require('./components/echarts/WordCloudChart');
-
-var _componentsEchartsWordCloudChart2 = _interopRequireDefault(_componentsEchartsWordCloudChart);
 
 var router = _react2['default'].createElement(
   _reactRouter.Router,
@@ -30,12 +30,9 @@ var router = _react2['default'].createElement(
   _react2['default'].createElement(
     _reactRouter.Route,
     { path: '/', component: _componentsApp2['default'] },
-    _react2['default'].createElement(_reactRouter.IndexRoute, { component: _componentsEchartsWordCloudChart2['default'] }),
-    _react2['default'].createElement(
-      _reactRouter.Route,
-      { path: 'echarts' },
-      _react2['default'].createElement(_reactRouter.Route, { path: 'word-cloud', component: _componentsEchartsWordCloudChart2['default'] })
-    ),
+    _react2['default'].createElement(_reactRouter.IndexRoute, { component: _componentsHome2['default'] }),
+    require('./echarts/routes'),
+    require('./threejs/routes'),
     _react2['default'].createElement(_reactRouter.Route, { path: '*', component: _componentsNoMatch2['default'] })
   )
 );

@@ -43,32 +43,58 @@ var App = (function (_React$Component) {
         null,
         _react2['default'].createElement(
           _reactBootstrap.Navbar,
-          { inverse: true, staticTop: true, toggleNavKey: 0 },
+          { inverse: true, staticTop: true },
           _react2['default'].createElement(
-            _reactBootstrap.NavBrand,
+            _reactBootstrap.Navbar.Header,
             null,
             _react2['default'].createElement(
-              'a',
-              { href: '#' },
-              'SystemJS Starter'
-            )
+              _reactBootstrap.Navbar.Brand,
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: '#' },
+                'SystemJS ES6 Demos'
+              )
+            ),
+            _react2['default'].createElement(_reactBootstrap.Navbar.Toggle, null)
           ),
           _react2['default'].createElement(
-            _reactBootstrap.Nav,
+            _reactBootstrap.Navbar.Collapse,
             null,
             _react2['default'].createElement(
-              _reactRouterBootstrap.LinkContainer,
-              { to: '/examples' },
+              _reactBootstrap.Nav,
+              null,
               _react2['default'].createElement(
-                _reactBootstrap.NavItem,
-                null,
-                'Examples'
+                _reactRouterBootstrap.LinkContainer,
+                { to: '/echarts/word-cloud' },
+                _react2['default'].createElement(
+                  _reactBootstrap.NavItem,
+                  null,
+                  'ECharts'
+                )
+              ),
+              _react2['default'].createElement(
+                _reactBootstrap.NavDropdown,
+                { eventKey: 3, title: 'three.js', id: 'threejs-nav-dropdown' },
+                _react2['default'].createElement(
+                  _reactRouterBootstrap.LinkContainer,
+                  { to: '/three.js/hello-world' },
+                  _react2['default'].createElement(
+                    _reactBootstrap.NavItem,
+                    null,
+                    'Hello World'
+                  )
+                )
               )
             ),
             _react2['default'].createElement(
-              _reactBootstrap.NavItem,
-              { eventKey: 2, href: '//github.com/luqin/systemjs-es6-react-demo', target: '_blank' },
-              'GitHub'
+              _reactBootstrap.Nav,
+              { pullRight: true },
+              _react2['default'].createElement(
+                _reactBootstrap.NavItem,
+                { eventKey: 2, href: '//github.com/luqin/systemjs-es6-demos', target: '_blank' },
+                'GitHub'
+              )
             )
           )
         ),

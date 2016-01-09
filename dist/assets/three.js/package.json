@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "three.js",
+      "E:\\Workspace\\github2\\systemjs-es6-react-demo"
+    ]
+  ],
+  "_from": "three.js@latest",
+  "_id": "three.js@0.73.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/three.js",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "email": "info@mrdoob.com",
+    "name": "mrdoob"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "three.js",
+    "raw": "three.js",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/three.js/-/three.js-0.73.0.tgz",
+  "_shasum": "9acd27d0850c170678413f91d484a37d3b0f6f44",
+  "_shrinkwrap": null,
+  "_spec": "three.js",
+  "_where": "E:\\Workspace\\github2\\systemjs-es6-react-demo",
+  "author": {
+    "name": "mrdoob"
+  },
+  "bugs": {
+    "url": "https://github.com/mrdoob/three.js/issues"
+  },
+  "dependencies": {},
+  "description": "JavaScript 3D library",
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "lodash": "^3.10.0"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "9acd27d0850c170678413f91d484a37d3b0f6f44",
+    "tarball": "http://registry.npmjs.org/three.js/-/three.js-0.73.0.tgz"
+  },
+  "gitHead": "e55ba320406816e01c3e989ecc3749c4341cf632",
+  "homepage": "http://threejs.org/",
+  "keywords": [
+    "3d",
+    "three",
+    "three.js",
+    "webgl"
+  ],
+  "license": "MIT",
+  "main": "build/three.js",
+  "maintainers": [
+    {
+      "name": "mrdoob",
+      "email": "info@mrdoob.com"
+    }
+  ],
+  "name": "three.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdoob/three.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.73.0"
+}
