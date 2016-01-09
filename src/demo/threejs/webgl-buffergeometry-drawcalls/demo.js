@@ -67,7 +67,7 @@ const demo = {
 
     function init() {
 
-      initGUI();
+      // initGUI();
 
       //
 

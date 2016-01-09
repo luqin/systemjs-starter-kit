@@ -83,7 +83,7 @@ var demo = {
 
     function init() {
 
-      initGUI();
+      // initGUI();
 
       //
 
