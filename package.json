@@ -8,6 +8,7 @@
   "dependencies": {
     "babel-runtime": "^5.8.25",
     "bootstrap": "^3.3.6",
+    "dat-gui": "^0.5.0",
     "echarts": "^2.2.8",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",

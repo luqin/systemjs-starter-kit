@@ -13,16 +13,19 @@ System.config({
     'bootstrap': {
       main: 'js/bootstrap.min.js'
     },
-    'lodash': {
+    'dat-gui': {
+      main: 'index.js'
+    },
+    lodash: {
       main: 'index.js'
     },
     'react-router-bootstrap': {
       main: 'lib/index.js'
     },
-    'echarts': {
+    echarts: {
       main: 'echarts.js'
     },
-    'zrenderjs': {
+    zrenderjs: {
       main: 'zrender.js'
     }
   }

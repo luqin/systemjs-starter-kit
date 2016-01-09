@@ -87,6 +87,15 @@ var App = (function (_React$Component) {
                 ),
                 _react2['default'].createElement(
                   _reactRouterBootstrap.LinkContainer,
+                  { to: '/three.js/webgl-buffergeometry-drawcalls' },
+                  _react2['default'].createElement(
+                    _reactBootstrap.NavItem,
+                    null,
+                    'webgl-buffergeometry-drawcalls'
+                  )
+                ),
+                _react2['default'].createElement(
+                  _reactRouterBootstrap.LinkContainer,
                   { to: '/three.js/lesson1' },
                   _react2['default'].createElement(
                     _reactBootstrap.NavItem,

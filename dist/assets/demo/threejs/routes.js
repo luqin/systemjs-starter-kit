@@ -20,11 +20,16 @@ var _lesson1ComponentsHelloWorld = require('./lesson1/components/HelloWorld');
 
 var _lesson1ComponentsHelloWorld2 = _interopRequireDefault(_lesson1ComponentsHelloWorld);
 
+var _webglBuffergeometryDrawcallsComponentsHelloWorld = require('./webgl-buffergeometry-drawcalls/components/HelloWorld');
+
+var _webglBuffergeometryDrawcallsComponentsHelloWorld2 = _interopRequireDefault(_webglBuffergeometryDrawcallsComponentsHelloWorld);
+
 var routes = _react2['default'].createElement(
   _reactRouter.Route,
   { path: 'three.js' },
   _react2['default'].createElement(_reactRouter.Route, { path: 'hello-world', component: _helloworldComponentsHelloWorld2['default'] }),
-  _react2['default'].createElement(_reactRouter.Route, { path: 'lesson1', component: _lesson1ComponentsHelloWorld2['default'] })
+  _react2['default'].createElement(_reactRouter.Route, { path: 'lesson1', component: _lesson1ComponentsHelloWorld2['default'] }),
+  _react2['default'].createElement(_reactRouter.Route, { path: 'webgl-buffergeometry-drawcalls', component: _webglBuffergeometryDrawcallsComponentsHelloWorld2['default'] })
 );
 
 exports['default'] = routes;
