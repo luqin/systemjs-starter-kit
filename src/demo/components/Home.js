@@ -7,7 +7,7 @@ import {
 } from 'react-bootstrap';
 
 import EchartsWordCloudChart from '../echarts/components/WordCloudChart';
-import ThreejsHelloWorld from '../threejs/lesson1/components/HelloWorld';
+import ThreejsHelloWorld from '../threejs/webgl-buffergeometry-drawcalls/components/HelloWorld';
 
 class Home extends React.Component {
 

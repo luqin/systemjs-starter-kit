@@ -53,13 +53,7 @@ class App extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Grid>
-          <Row>
-            <Col md={12}>
-              {this.props.children}
-            </Col>
-          </Row>
-        </Grid>
+        {this.props.children}
       </div>
     );
   }

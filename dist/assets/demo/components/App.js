@@ -116,19 +116,7 @@ var App = (function (_React$Component) {
             )
           )
         ),
-        _react2['default'].createElement(
-          _reactBootstrap.Grid,
-          null,
-          _react2['default'].createElement(
-            _reactBootstrap.Row,
-            null,
-            _react2['default'].createElement(
-              _reactBootstrap.Col,
-              { md: 12 },
-              this.props.children
-            )
-          )
-        )
+        this.props.children
       );
     }
   }], [{
