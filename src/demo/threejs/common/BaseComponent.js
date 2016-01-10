@@ -1,5 +1,9 @@
 import React from 'react';
 import $ from 'jquery';
+import {
+  Row,
+  Col,
+} from 'react-bootstrap';
 
 class BaseComponent extends React.Component {
 
@@ -26,7 +30,11 @@ class BaseComponent extends React.Component {
 
   render() {
     return (
-      <div ref="three"/>
+    <Row>
+      <Col md={12}>
+        <div ref="three"/>
+      </Col>
+    </Row>
     );
   }
 
