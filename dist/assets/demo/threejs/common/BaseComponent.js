@@ -22,6 +22,8 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+var _reactBootstrap = require('react-bootstrap');
+
 var BaseComponent = (function (_React$Component) {
   _inherits(BaseComponent, _React$Component);
 
@@ -56,7 +58,15 @@ var BaseComponent = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2['default'].createElement('div', { ref: 'three' });
+      return _react2['default'].createElement(
+        _reactBootstrap.Row,
+        null,
+        _react2['default'].createElement(
+          _reactBootstrap.Col,
+          { md: 12 },
+          _react2['default'].createElement('div', { ref: 'three' })
+        )
+      );
     }
   }]);
 

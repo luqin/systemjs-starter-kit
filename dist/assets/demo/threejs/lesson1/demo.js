@@ -88,7 +88,7 @@ var lesson1 = {
     // prepare stats
     this.stats = new _statsJs2['default']();
     this.stats.domElement.style.position = 'absolute';
-    this.stats.domElement.style.bottom = '0px';
+    this.stats.domElement.style.top = '0';
     this.stats.domElement.style.zIndex = 10;
     this.container.appendChild(this.stats.domElement);
 

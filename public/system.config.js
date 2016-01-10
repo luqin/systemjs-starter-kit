@@ -1,14 +1,7 @@
 System.config({
   baseURL: "./assets",
-  paths: {
-    "*": "*.js"
-  },
   defaultJSExtensions: true,
-  map: {
-    'stats.js': 'stats.js/build/stats.min',
-    'three.js': 'three.js/build/three.min',
-    'threejs-OrbitControls': 'threejs-OrbitControls/OrbitControls'
-  },
+  map: {},
   packages: {
     'bootstrap': {
       main: 'js/bootstrap.min.js'
@@ -18,6 +11,15 @@ System.config({
     },
     lodash: {
       main: 'index.js'
+    },
+    'stats.js': {
+      main: 'build/stats.min'
+    },
+    'three.js': {
+      main: 'build/three.min'
+    },
+    'threejs-OrbitControls': {
+      main: 'OrbitControls'
     },
     'react-router-bootstrap': {
       main: 'lib/index.js'

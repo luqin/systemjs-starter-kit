@@ -176,7 +176,7 @@ var demo = {
 
       stats = new _statsJs2['default']();
       stats.domElement.style.position = 'absolute';
-      stats.domElement.style.top = '100px';
+      stats.domElement.style.top = '0';
       container.appendChild(stats.domElement);
 
       window.addEventListener('resize', onWindowResize, false);
