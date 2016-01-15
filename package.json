@@ -1,7 +1,7 @@
 {
-  "name": "systemjs-es6-demos",
+  "name": "systemjs-starter-kit",
   "version": "1.0.0",
-  "description": "ES6 SystemJS and Modules",
+  "description": "ES6 Modules starter project that uses Gulp, Babel, SystemJS, React, react-router, react-bootstrap, ECharts, three.js",
   "scripts": {
     "start": "gulp serve"
   },
