@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "globals": {
     "__DEV__": true
   },
@@ -10,6 +11,6 @@
     "prefer-const": 0,
     "react/jsx-quotes": 0,
     "space-before-function-paren": 0,
-    "jsx-quotes": [2, "prefer-double"]
+    "jsx-quotes": [ 2, "prefer-double" ]
   }
 }

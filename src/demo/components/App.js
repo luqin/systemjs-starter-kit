@@ -49,11 +49,20 @@ class App extends React.Component {
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={2} href="//github.com/luqin/systemjs-es6-demos" target="_blank">GitHub</NavItem>
+              <NavItem eventKey={2} href="//github.com/luqin/systemjs-es6-demos" target="_blank">
+                GitHub
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {this.props.children}
+
+        <Grid fluid>
+          <Row>
+            <Col xs={12} md={12}>
+              {this.props.children}
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }
