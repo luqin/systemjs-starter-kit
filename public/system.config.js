@@ -4,10 +4,10 @@ System.config({
   map: {},
   packages: {
     'babel-polyfill': {
-      main: 'polyfill.min.js'
+      main: 'dist/polyfill.min.js'
     },
     bootstrap: {
-      main: 'js/bootstrap.min.js'
+      main: 'dist/js/bootstrap.min.js'
     },
     'dat-gui': {
       main: 'index.js'

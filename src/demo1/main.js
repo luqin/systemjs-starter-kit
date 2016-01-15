@@ -1,6 +1,6 @@
 System.import('./a') // , __moduleName
   .then(a => {
-    console.info('相对路径加载`./a`成功');
+    console.info('相对路径加载`./a`成功', a);
   }, e=> {
     console.error('相对路径加载`./a`失败', e);
   })
@@ -31,7 +31,7 @@ let b = {
 
 console.info(Object.assign(a, b));
 
-let arr = [1, 2, 3];
+let arr = [ 1, 2, 3 ];
 
 for (let item of arr) {
 

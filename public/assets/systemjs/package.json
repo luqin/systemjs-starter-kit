@@ -1,0 +1,62 @@
+{
+  "name": "systemjs",
+  "version": "0.19.16",
+  "description": "Universal dynamic module loader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/systemjs/systemjs.git"
+  },
+  "author": {
+    "name": "Guy Bedford"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "es6-module-loader": "^0.17.10",
+    "when": "^3.7.5"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "qunit": "^0.6.2",
+    "traceur": "0.0.95",
+    "typescript": "^1.6.2",
+    "uglify-js": "~2.4.23"
+  },
+  "scripts": {
+    "test:browser": "make test",
+    "build": "make",
+    "test": "npm run test:babel && npm run test:traceur && npm run test:typescript",
+    "test:babel": "qunit -c s:./index.js -t ./test/test-babel.js",
+    "test:traceur": "qunit -c s:./index.js -t ./test/test-traceur.js",
+    "test:typescript": "qunit -c s:./index.js -t ./test/test-typescript.js"
+  },
+  "gitHead": "894036ec6b35a0d6fe8ee1d4ae3642d43e7c15c6",
+  "bugs": {
+    "url": "https://github.com/systemjs/systemjs/issues"
+  },
+  "homepage": "https://github.com/systemjs/systemjs#readme",
+  "_id": "systemjs@0.19.16",
+  "_shasum": "fa8a08dc2436c1c39ca48ae39858413225f9e230",
+  "_from": "systemjs@>=0.19.16 <0.20.0",
+  "_npmVersion": "2.14.15",
+  "_nodeVersion": "5.1.1",
+  "_npmUser": {
+    "name": "guybedford",
+    "email": "guybedford@gmail.com"
+  },
+  "dist": {
+    "shasum": "fa8a08dc2436c1c39ca48ae39858413225f9e230",
+    "size": 271703,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/systemjs/download/systemjs-0.19.16.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "guybedford",
+      "email": "guybedford@gmail.com"
+    }
+  ],
+  "directories": {},
+  "publish_time": 1452698437291,
+  "_cnpm_publish_time": 1452698437291,
+  "_resolved": "http://registry.npm.taobao.org/systemjs/download/systemjs-0.19.16.tgz"
+}
