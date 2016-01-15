@@ -4,5 +4,6 @@
 .svn
 .git
 
+dist/
 node_modules/
 test/

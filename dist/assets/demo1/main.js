@@ -1,17 +1,57 @@
 'use strict';
 
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+System.import('./a') // , __moduleName
+.then(function (a) {
+  console.info('相对路径加载`./a`成功');
+}, function (e) {
+  console.error('相对路径加载`./a`失败', e);
+}).catch(function (e) {
+  console.error(e);
+});
 
-var _react = require('react');
+System.import('demo1/truck').then(function (res) {
+  var Truck = res.Truck;
 
-var _react2 = _interopRequireDefault(_react);
+  var truck = new Truck({
+    price: 40000, make: 'Ford', model: 'F150',
+    year: 2014, is4by4: true
+  });
+  console.info(truck.getDetails());
+  console.info('绝对路径加载`demo1/truck`成功');
+}, function (e) {
+  console.error('绝对路径加载`demo1/truck`失败', e);
+}).catch(function (e) {
+  console.error(e);
+});
 
-var _reactDom = require('react-dom');
+var a = {};
+var b = {
+  a: 1
+};
 
-var _reactDom2 = _interopRequireDefault(_reactDom);
+console.info(Object.assign(a, b));
 
-var _componentsApp = require('./components/App');
+var arr = [1, 2, 3];
 
-var _componentsApp2 = _interopRequireDefault(_componentsApp);
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
 
-_reactDom2['default'].render(_react2['default'].createElement(_componentsApp2['default'], null), document.querySelector('#app'));
+try {
+  for (var _iterator = arr[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    var item = _step.value;
+  }
+} catch (err) {
+  _didIteratorError = true;
+  _iteratorError = err;
+} finally {
+  try {
+    if (!_iteratorNormalCompletion && _iterator.return) {
+      _iterator.return();
+    }
+  } finally {
+    if (_didIteratorError) {
+      throw _iteratorError;
+    }
+  }
+}

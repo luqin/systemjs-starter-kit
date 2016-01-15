@@ -1,50 +1,50 @@
 'use strict';
 
-var _get = require('babel-runtime/helpers/get')['default'];
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _commonBaseComponent = require('../../common/BaseComponent');
+var _BaseComponent2 = require('../../common/BaseComponent');
 
-var _commonBaseComponent2 = _interopRequireDefault(_commonBaseComponent);
+var _BaseComponent3 = _interopRequireDefault(_BaseComponent2);
 
 var _demo = require('../demo');
 
 var _demo2 = _interopRequireDefault(_demo);
 
-var HelloWorld = (function (_BaseComponent) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HelloWorld = function (_BaseComponent) {
   _inherits(HelloWorld, _BaseComponent);
 
   function HelloWorld() {
     _classCallCheck(this, HelloWorld);
 
-    _get(Object.getPrototypeOf(HelloWorld.prototype), 'constructor', this).apply(this, arguments);
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(HelloWorld).apply(this, arguments));
   }
 
   _createClass(HelloWorld, [{
     key: 'init',
     value: function init() {
-      _demo2['default'].init(this.getContainer());
+      _demo2.default.init(this.getContainer());
     }
   }, {
     key: 'destroy',
     value: function destroy() {
-      _demo2['default'].destroy();
+      _demo2.default.destroy();
     }
   }]);
 
   return HelloWorld;
-})(_commonBaseComponent2['default']);
+}(_BaseComponent3.default);
 
-exports['default'] = HelloWorld;
+exports.default = HelloWorld;
 module.exports = exports['default'];

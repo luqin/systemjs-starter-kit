@@ -1,5 +1,6 @@
 {
-  "stage": 0,
-  "optional": ["runtime"],
-  "plugins": ["object-assign"]
+  plugins: [
+    'add-module-exports'
+  ],
+  "presets": ["es2015", "es2015-node5", "react", "stage-0"]
 }

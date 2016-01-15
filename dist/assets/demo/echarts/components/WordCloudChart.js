@@ -1,8 +1,6 @@
 'use strict';
 
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -15,6 +13,8 @@ var _echarts = require('echarts');
 var _echarts2 = _interopRequireDefault(_echarts);
 
 require('echarts/chart/wordCloud');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function createRandomItemStyle() {
   return {
@@ -130,32 +130,20 @@ var charCloudOption = {
   }]
 };
 
-var WordCloudChart = _react2['default'].createClass({
+var WordCloudChart = _react2.default.createClass({
   displayName: 'WordCloudChart',
-
   componentDidMount: function componentDidMount() {
-    var mychart = _echarts2['default'].init(this.refs.chart);
+    var mychart = _echarts2.default.init(this.refs.chart);
     mychart.setOption(charCloudOption);
 
     setTimeout(function () {
-      require('./a');
-      System['import']('./a').then(function (a) {
-        console.error('相对路径加载`./a`成功');
-      })['catch'](function () {
-        console.error('相对路径加载`./a`失败');
-      });
-      System['import']('demo1/truck').then(function (a) {
-        console.error('绝对路径加载`demo1/truck`成功');
-      })['catch'](function () {
-        console.error('绝对路径加载`demo1/truck`失败');
-      });
+      System.import('demo1/main');
     }, 2000);
   },
-
   render: function render() {
-    return _react2['default'].createElement('div', { ref: 'chart', style: { width: '80%', height: window.innerHeight - 130 + 'px' } });
+    return _react2.default.createElement('div', { ref: 'chart', style: { width: '80%', height: window.innerHeight - 130 + 'px' } });
   }
 });
 
-exports['default'] = WordCloudChart;
+exports.default = WordCloudChart;
 module.exports = exports['default'];

@@ -1,16 +1,8 @@
 'use strict';
 
-var _get = require('babel-runtime/helpers/get')['default'];
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -20,32 +12,32 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = require('react-bootstrap');
 
-var _echartsComponentsWordCloudChart = require('../echarts/components/WordCloudChart');
+var _WordCloudChart = require('../echarts/components/WordCloudChart');
 
-var _echartsComponentsWordCloudChart2 = _interopRequireDefault(_echartsComponentsWordCloudChart);
+var _WordCloudChart2 = _interopRequireDefault(_WordCloudChart);
 
-var _threejsWebglBuffergeometryDrawcallsComponentsHelloWorld = require('../threejs/webgl-buffergeometry-drawcalls/components/HelloWorld');
+var _HelloWorld = require('../threejs/webgl-buffergeometry-drawcalls/components/HelloWorld');
 
-var _threejsWebglBuffergeometryDrawcallsComponentsHelloWorld2 = _interopRequireDefault(_threejsWebglBuffergeometryDrawcallsComponentsHelloWorld);
+var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
 
-var Home = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
-
-  _createClass(Home, null, [{
-    key: 'propTypes',
-    value: {},
-    enumerable: true
-  }, {
-    key: 'defaultProps',
-    value: {},
-    enumerable: true
-  }]);
 
   function Home(props) {
     _classCallCheck(this, Home);
 
-    _get(Object.getPrototypeOf(Home.prototype), 'constructor', this).call(this, props);
-    this.state = {};
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Home).call(this, props));
+
+    _this.state = {};
+    return _this;
   }
 
   _createClass(Home, [{
@@ -54,26 +46,26 @@ var Home = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2['default'].createElement(
+      return _react2.default.createElement(
         'div',
         null,
-        _react2['default'].createElement(
+        _react2.default.createElement(
           'h1',
           null,
           'ES6 JavaScript with Modules Using System.js'
         ),
-        _react2['default'].createElement(
+        _react2.default.createElement(
           _reactBootstrap.Row,
           null,
-          _react2['default'].createElement(
+          _react2.default.createElement(
             _reactBootstrap.Col,
             { xs: 12, md: 6 },
-            _react2['default'].createElement(_echartsComponentsWordCloudChart2['default'], null)
+            _react2.default.createElement(_WordCloudChart2.default, null)
           ),
-          _react2['default'].createElement(
+          _react2.default.createElement(
             _reactBootstrap.Col,
             { xs: 12, md: 6 },
-            _react2['default'].createElement(_threejsWebglBuffergeometryDrawcallsComponentsHelloWorld2['default'], null)
+            _react2.default.createElement(_HelloWorld2.default, null)
           )
         )
       );
@@ -81,7 +73,9 @@ var Home = (function (_React$Component) {
   }]);
 
   return Home;
-})(_react2['default'].Component);
+}(_react2.default.Component);
 
-exports['default'] = Home;
+Home.propTypes = {};
+Home.defaultProps = {};
+exports.default = Home;
 module.exports = exports['default'];

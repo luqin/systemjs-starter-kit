@@ -30,11 +30,11 @@ class BaseComponent extends React.Component {
 
   render() {
     return (
-    <Row>
-      <Col md={12}>
-        <div ref="three"/>
-      </Col>
-    </Row>
+      <Row>
+        <Col md={12}>
+          <div ref="three"/>
+        </Col>
+      </Row>
     );
   }
 

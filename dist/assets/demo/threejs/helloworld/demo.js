@@ -1,8 +1,6 @@
 'use strict';
 
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -12,13 +10,15 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var demo = {
   init: function init(container) {
     var width = 1;
     var height = 1;
 
     function resize() {
-      width = (0, _jquery2['default'])(container).innerWidth();
+      width = (0, _jquery2.default)(container).innerWidth();
       height = window.innerHeight - 100;
     }
 
@@ -51,5 +51,5 @@ var demo = {
   }
 };
 
-exports['default'] = demo;
+exports.default = demo;
 module.exports = exports['default'];

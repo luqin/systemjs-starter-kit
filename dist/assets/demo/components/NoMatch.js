@@ -1,8 +1,6 @@
 'use strict';
 
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -10,11 +8,12 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var NoMatch = _react2['default'].createClass({
-  displayName: 'NoMatch',
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var NoMatch = _react2.default.createClass({
+  displayName: 'NoMatch',
   render: function render() {
-    return _react2['default'].createElement(
+    return _react2.default.createElement(
       'div',
       null,
       'NoMatch'
@@ -22,5 +21,5 @@ var NoMatch = _react2['default'].createClass({
   }
 });
 
-exports['default'] = NoMatch;
+exports.default = NoMatch;
 module.exports = exports['default'];

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute } from 'react-router';
+import {Router, Route, IndexRoute} from 'react-router';
 
 import WordCloudChart from './components/WordCloudChart';
 

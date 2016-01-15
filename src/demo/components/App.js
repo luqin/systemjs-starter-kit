@@ -10,7 +10,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 
 import 'jquery';
 import 'bootstrap';

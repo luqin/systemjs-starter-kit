@@ -1,37 +1,42 @@
 'use strict';
 
-var _get = require('babel-runtime/helpers/get')['default'];
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-    value: true
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
+exports.Truck = undefined;
 
 var _auto = require('./auto');
 
-var Truck = (function (_Auto) {
-    _inherits(Truck, _Auto);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-    function Truck(data) {
-        _classCallCheck(this, Truck);
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-        _get(Object.getPrototypeOf(Truck.prototype), 'constructor', this).call(this, data);
-        this.is4by4 = data.is4by4;
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Truck = exports.Truck = function (_Auto) {
+  _inherits(Truck, _Auto);
+
+  function Truck(data) {
+    _classCallCheck(this, Truck);
+
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Truck).call(this, data));
+
+    _this.is4by4 = data.is4by4;
+
+    console.info('Truck.constructor');
+    return _this;
+  }
+
+  _createClass(Truck, [{
+    key: 'getDetails',
+    value: function getDetails() {
+      return _get(Object.getPrototypeOf(Truck.prototype), 'getDetails', this).call(this) + ' 4x4: ' + this.is4by4;
     }
+  }]);
 
-    _createClass(Truck, [{
-        key: 'getDetails',
-        value: function getDetails() {
-            return _get(Object.getPrototypeOf(Truck.prototype), 'getDetails', this).call(this) + ' 4x4: ' + this.is4by4;
-        }
-    }]);
-
-    return Truck;
-})(_auto.Auto);
-
-exports.Truck = Truck;
+  return Truck;
+}(_auto.Auto);

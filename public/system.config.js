@@ -3,7 +3,10 @@ System.config({
   defaultJSExtensions: true,
   map: {},
   packages: {
-    'bootstrap': {
+    'babel-polyfill': {
+      main: 'polyfill.min.js'
+    },
+    bootstrap: {
       main: 'js/bootstrap.min.js'
     },
     'dat-gui': {
@@ -11,6 +14,9 @@ System.config({
     },
     lodash: {
       main: 'index.js'
+    },
+    jquery: {
+      main: 'dist/jquery.min.js'
     },
     'stats.js': {
       main: 'build/stats.min'
@@ -21,8 +27,20 @@ System.config({
     'threejs-OrbitControls': {
       main: 'OrbitControls'
     },
+    react: {
+      main: 'dist/react.min.js'
+    },
+    'react-dom': {
+      main: 'dist/react-dom.min.js'
+    },
+    'react-router': {
+      main: 'umd/ReactRouter.min.js'
+    },
     'react-router-bootstrap': {
       main: 'lib/index.js'
+    },
+    'react-bootstrap': {
+      main: 'dist/react-bootstrap.min.js'
     },
     echarts: {
       main: 'echarts.js'

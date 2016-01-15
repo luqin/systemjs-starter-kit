@@ -1,0 +1,54 @@
+{
+  "name": "react-dom",
+  "version": "0.14.5",
+  "description": "React package for working with the DOM.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "homepage": "https://github.com/facebook/react/tree/master/npm-react-dom",
+  "peerDependencies": {
+    "react": "^0.14.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "_id": "react-dom@0.14.5",
+  "_shasum": "f0018bee7a941b2236d89ebe64b02adf15512002",
+  "_resolved": "http://registry.npm.taobao.org/react-dom/download/react-dom-0.14.5.tgz",
+  "_from": "react-dom@>=0.14.0 <0.15.0",
+  "_npmVersion": "2.14.4",
+  "_nodeVersion": "4.1.0",
+  "_npmUser": {
+    "name": "spicyj",
+    "email": "ben@benalpert.com"
+  },
+  "maintainers": [
+    {
+      "name": "spicyj",
+      "email": "ben@benalpert.com"
+    },
+    {
+      "name": "zpao",
+      "email": "paul@oshannessy.com"
+    }
+  ],
+  "dist": {
+    "shasum": "f0018bee7a941b2236d89ebe64b02adf15512002",
+    "size": 4157,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-dom/download/react-dom-0.14.5.tgz"
+  },
+  "directories": {},
+  "publish_time": 1451428803262,
+  "_cnpm_publish_time": 1451428803262,
+  "readme": "ERROR: No README data found!"
+}
