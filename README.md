@@ -6,8 +6,6 @@
 [![devDependency Status][dev-deps-badge]][dev-deps]
 [![peerDependency Status][peer-deps-badge]][peer-deps]
 
-System.js ES6 Modules starter project that uses Gulp, Babel, SystemJS, React, react-router, react-bootstrap, ECharts, three.js.
-
 ## Techniques
 
 - [System.js](https://github.com/systemjs/systemjs)
@@ -32,11 +30,15 @@ If you are using different node versions on your machine, use [nvm](https://gith
 
 1. Install the local packages for this demo.
 
-    `npm install`
+```sh
+npm install
+```
 
 2. Run the server, launch the browser, and transpile the ES6 to ES5 using Babel
 
-    `npm start`
+```sh
+npm start
+```
 
 ## Details
 
