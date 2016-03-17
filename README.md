@@ -6,6 +6,28 @@
 [![devDependency Status][dev-deps-badge]][dev-deps]
 [![peerDependency Status][peer-deps-badge]][peer-deps]
 
+System.js ES6 Modules starter project that uses Gulp, Babel, SystemJS, React, react-router, react-bootstrap, ECharts, three.js.
+
+## Techniques
+
+- [System.js](https://github.com/systemjs/systemjs)
+- [react](http://facebook.github.io/react/)
+- [babeljs](https://babeljs.io/)
+- [react-router](https://github.com/rackt/react-router)
+- [eslint](http://eslint.org/)
+- [gulp](http://gulpjs.com/) Aren't NPM scripts better? [No](https://twitter.com/jaffathecake/status/700320306053935104).
+- [three.js](https://github.com/mrdoob/three.js)
+- [ECharts](https://github.com/ecomfe/echarts)
+- [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap)
+- And much more. Check source code.
+
+## Prerequisites
+
+- [node.js](http://nodejs.org) (Node 5 with npm 3 is required).
+- [gulp](http://gulpjs.com/) (`npm install -g gulp`)
+
+If you are using different node versions on your machine, use [nvm](https://github.com/creationix/nvm) to manage them.
+
 ## Getting Started
 
 1. Install the local packages for this demo.
