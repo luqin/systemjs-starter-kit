@@ -29,16 +29,16 @@ If you are using different node versions on your machine, use [nvm](https://gith
 ## Getting Started
 
 1. Install the local packages for this demo.
-
-```sh
-npm install
-```
+  
+  ```sh
+  npm install
+  ```
 
 2. Run the server, launch the browser, and transpile the ES6 to ES5 using Babel
 
-```sh
-npm start
-```
+  ```sh
+  npm start
+  ```
 
 ## Details
 
